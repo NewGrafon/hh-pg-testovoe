@@ -1,0 +1,48 @@
+{
+  "name": "another-knowledge-base",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/another-knowledge-base/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "another-knowledge-base:build"
+      }
+    },
+    "typeorm": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "commands": [
+          {
+            "command": "ts-node -r tsconfig-paths/register --project apps/another-knowledge-base/tsconfig.app.json node_modules/typeorm/cli"
+          }
+        ]
+      }
+    },
+    "typeorm-migration-generate": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "commands": [
+          {
+            "command": "nx run another-knowledge-base:typeorm migration:generate apps/another-knowledge-base/src/migrations/{args.name} -d apps/another-knowledge-base/src/common/consts-configs/typeorm.data-source.ts --pretty"
+          }
+        ]
+      }
+    },
+    "typeorm-migration-run": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "commands": [
+          {
+            "command": "nx run another-knowledge-base:typeorm migration:run -d apps/another-knowledge-base/src/common/consts-configs/typeorm.data-source.ts"
+          }
+        ]
+      }
+    }
+  }
+}
