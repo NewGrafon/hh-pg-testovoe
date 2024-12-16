@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { CreateArticleDto } from './dto/create-article.dto';
 import { UpdateArticleDto } from './dto/update-article.dto';
-import { ResponseItem, ResponseItems } from '@pvz-backends/shared';
+import { ResponseItem, ResponseItems } from '@testovoe/shared';
 import { ArticleEntity } from './entities/article.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CacheWrapperService } from '@pvz-backends/cache-module';
+import { CacheWrapperService } from '@testovoe/cache-module';
 import { CacheKeys } from '../../common/consts-configs/cache-keys.const';
 import { UnauthorizedResponseItem } from '../../../../../libs/shared/src/lib/consts-configs/ready-responses.consts';
 

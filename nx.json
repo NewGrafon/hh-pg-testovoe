@@ -37,13 +37,7 @@
         "targetName": "test"
       },
       "exclude": [
-        "apps/partners-cards-e2e/**/*",
-        "apps/auth-e2e/**/*",
-        "apps/tasks-e2e/**/*",
-        "apps/Another-Knowelege-Base-e2e/**/*",
-        "apps/another-knowelege-base-e2e/**/*",
-        "apps/another-knoweledge-base-e2e/**/*",
-        "apps/another-knowledge-base-e2e/**/*"
+
       ]
     }
   ],

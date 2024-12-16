@@ -4,7 +4,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { config } from 'dotenv';
-import { EnvCheckerFunction, EnvTransformedValues, swaggerBuildConfigFunction } from '@pvz-backends/shared';
+import { EnvCheckerFunction, EnvTransformedValues, swaggerBuildConfigFunction } from '@testovoe/shared';
 import { SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {

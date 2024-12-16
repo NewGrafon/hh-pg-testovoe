@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@pvz-backends/auth-module": ["libs/auth-module/src/index.ts"],
-      "@pvz-backends/cache-module": ["libs/cache-module/src/index.ts"],
-      "@pvz-backends/shared": ["libs/shared/src/index.ts"]
+      "@testovoe/auth-module": ["libs/auth-module/src/index.ts"],
+      "@testovoe/cache-module": ["libs/cache-module/src/index.ts"],
+      "@testovoe/shared": ["libs/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

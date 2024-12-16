@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { EnvTransformedValues } from '@pvz-backends/shared';
+import { EnvTransformedValues } from '@testovoe/shared';
 
 @Injectable()
 export class AuthService {
@@ -20,7 +20,7 @@ export class AuthService {
             expiresIn: EnvTransformedValues().expires_in().value
           }),
           // @ts-ignore // shitty code damn......
-          `\n--- user example: ${JSON.stringify(exampleUser, null, 2).replaceAll('\n', ' ').replaceAll('  ', ' ').replaceAll('  ', ' ')} ---`,
+          `\n--- user example: ${JSON.stringify(exampleUser, null, 2).replaceAll('\n', ' ').replaceAll('  ', ' ').replaceAll('  ', ' ')} ---`
         );
       }, 250);
     }

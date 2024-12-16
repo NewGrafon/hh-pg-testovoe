@@ -1,4 +1,4 @@
-import { EntityBaseInterface } from '@pvz-backends/shared';
+import { EntityBaseInterface } from '@testovoe/shared';
 
 export interface AuthDtoInterface {
   email: string;

@@ -1,4 +1,4 @@
-import { ExceptionMessages, ResponseItem, ResponseItems } from '@pvz-backends/shared';
+import { ExceptionMessages, ResponseItem, ResponseItems } from '@testovoe/shared';
 
 export const UnauthorizedResponseItem: ResponseItem<any> = {
   success: false,

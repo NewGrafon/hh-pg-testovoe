@@ -1,7 +1,7 @@
 import { Global, Module } from '@nestjs/common';
 import { CacheWrapperService } from './cache-wrapper.service';
 import { CacheModule } from '@nestjs/cache-manager';
-import { EnvTransformedValues } from '@pvz-backends/shared';
+import { EnvTransformedValues } from '@testovoe/shared';
 import * as redisStore from 'cache-manager-redis-store';
 
 @Global()

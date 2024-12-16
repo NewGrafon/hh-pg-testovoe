@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { AuthDto } from './dto/auth.dto';
-import { EnvTransformedValues, ExceptionMessages, ResponseItem } from '@pvz-backends/shared';
+import { EnvTransformedValues, ExceptionMessages, ResponseItem } from '@testovoe/shared';
 import { UserEntity } from './entities/user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';

@@ -15,8 +15,8 @@ import { ArticlesService } from './articles.service';
 import { CreateArticleDto } from './dto/create-article.dto';
 import { UpdateArticleDto } from './dto/update-article.dto';
 import { ApiBearerAuth, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
-import { AuthGuard } from '@pvz-backends/auth-module';
-import { AllowAnonymous, UserId } from '@pvz-backends/shared';
+import { AuthGuard } from '@testovoe/auth-module';
+import { AllowAnonymous, UserId } from '@testovoe/shared';
 
 @Controller('articles')
 @ApiTags('articles')

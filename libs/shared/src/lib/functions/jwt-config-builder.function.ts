@@ -1,4 +1,4 @@
-import { EnvTransformedValues } from '@pvz-backends/shared';
+import { EnvTransformedValues } from '@testovoe/shared';
 
 export function jwtConfigBuilderFunction() {
   return {

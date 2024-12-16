@@ -1,7 +1,6 @@
 import { BadRequestException, CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import {
-  DB_USER_AUTH_KEY,
   EnvTransformedValues,
   ExceptionMessages,
   IS_DEVELOPMENT_CONTROLLER,
@@ -10,7 +9,7 @@ import {
   PayloadInterface,
   ResponseItem,
   UserFromPayloadInterface
-} from '@pvz-backends/shared';
+} from '@testovoe/shared';
 import { Request } from 'express';
 import { JwtService } from '@nestjs/jwt';
 import { InjectDataSource } from '@nestjs/typeorm';

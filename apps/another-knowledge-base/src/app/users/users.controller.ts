@@ -2,10 +2,10 @@ import { Body, Controller, Delete, Param, ParseIntPipe, Patch, Post, UseGuards }
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { AuthDto } from './dto/auth.dto';
-import { OnlyAnonymous, ResponseItem } from '@pvz-backends/shared';
+import { OnlyAnonymous, ResponseItem } from '@testovoe/shared';
 import { UserEntity } from './entities/user.entity';
 import { ApiBearerAuth, ApiBody, ApiParam, ApiTags } from '@nestjs/swagger';
-import { AuthGuard } from '@pvz-backends/auth-module';
+import { AuthGuard } from '@testovoe/auth-module';
 import { UpdateUserDto } from './dto/update-user.dto';
 
 @Controller('users')

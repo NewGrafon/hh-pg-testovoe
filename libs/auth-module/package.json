@@ -1,5 +1,5 @@
 {
-  "name": "@pvz-backends/auth-module",
+  "name": "@testovoe/auth-module",
   "version": "0.0.1",
   "dependencies": {
     "tslib": "^2.3.0"

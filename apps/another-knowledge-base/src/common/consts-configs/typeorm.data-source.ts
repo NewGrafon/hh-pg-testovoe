@@ -1,6 +1,6 @@
 import { DataSource } from 'typeorm';
 import { config } from 'dotenv';
-import { EnvCheckerFunction, EnvTransformedValues } from '@pvz-backends/shared';
+import { EnvCheckerFunction, EnvTransformedValues } from '@testovoe/shared';
 
 //dotenv
 config({
