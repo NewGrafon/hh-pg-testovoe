@@ -7,7 +7,6 @@ export * from './lib/decorators/development-controller.decorator';
 export * from './lib/decorators/is-number.array';
 export * from './lib/decorators/non-primitive-array.decorator';
 export * from './lib/decorators/user-id.decorator';
-export * from './lib/decorators/request-ip.decorator';
 
 export * from './lib/enums/console-colors.enum';
 export * from './lib/enums/messages.enum';
