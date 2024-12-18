@@ -1,10 +1,10 @@
 import { Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
-import { TYPEORM_ENTITY_OPTIONS, TYPEORM_TIMESTAMP_TYPE, TYPEORM_UNSIGNED_TRUE } from '@testovoe/shared';
+import { TYPEORM_TIMESTAMP_TYPE, TYPEORM_UNSIGNED_TRUE } from '@testovoe/shared';
 import { ArticleEntityInterface } from '../../../common/interfaces/articles.interfaces';
 
 const tableName = 'articles';
 
-@Entity(tableName, TYPEORM_ENTITY_OPTIONS)
+@Entity(tableName)
 export class ArticleEntity implements ArticleEntityInterface {
   @PrimaryGeneratedColumn(TYPEORM_UNSIGNED_TRUE)
   id: number;

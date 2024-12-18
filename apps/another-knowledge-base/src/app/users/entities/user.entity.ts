@@ -1,10 +1,10 @@
 import { Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
-import { TYPEORM_ENTITY_OPTIONS, TYPEORM_TIMESTAMP_TYPE } from '@testovoe/shared';
+import { TYPEORM_TIMESTAMP_TYPE } from '@testovoe/shared';
 import { UserEntityInterface } from '../../../common/interfaces/users.interfaces';
 
 const tableName = 'users';
 
-@Entity(tableName, TYPEORM_ENTITY_OPTIONS)
+@Entity(tableName)
 export class UserEntity implements UserEntityInterface {
   @PrimaryGeneratedColumn()
   id: number;
